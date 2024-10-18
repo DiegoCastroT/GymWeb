@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Gimnasio</title>
+    <!-- Bootstrap CSS desde CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            padding-top: 56px; /* Espacio para el navbar fijo */
+        }
+
+        /* Cambiar el color del texto a negro */
+        .navbar-nav .nav-link {
+            color: black !important;
+        }
+
+        /* Mostrar el menú desplegable al pasar el ratón */
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block; /* Muestra el menú desplegable */
+        }
+
+        /* Ocultar el menú desplegable cuando no está en hover */
+        .dropdown-menu {
+            display: none; /* Oculta el menú por defecto */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> 
+                <img src="LOGO.png" alt="Logo Gimnasio" style="width:100px;"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto"> <!-- Alineación a la derecha -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="gimnasioDropdown" role="button" aria-haspopup="true" aria-expanded="false">Entrenamientos</a>
+                        <div class="dropdown-menu" aria-labelledby="gimnasioDropdown">
+                            <a class="dropdown-item" href="#">Entrenamiento de Fuerza</a>
+                            <a class="dropdown-item" href="#">Entrenamiento Cardiovascular</a>
+                            <a class="dropdown-item" href="#">Entrenamiento Funcional</a>
+                            <a class="dropdown-item" href="#">Clases de Yoga</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="horarios.js">Horarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novedades.js">Alquileres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary mr-2" href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-success" href="register.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS y jQuery desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
