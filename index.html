@@ -26,27 +26,24 @@
         .dropdown-menu {
             display: none; /* Oculta el menú por defecto */
         }
-        
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-light fixed-top">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"> 
                 <img src="LOGO.png" alt="Logo Gimnasio" style="width:100px;"> 
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto"> <!-- Alineación a la derecha -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button">Servicios</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
                         <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
                             <a class="dropdown-item" href="#">Máquinas</a>
                             <a class="dropdown-item" href="#">Curso</a>
-                            <a class="dropdown-item" href="#">Horarios</a>
-
                         </div>
                     </li>
                     <li class="nav-item">
@@ -58,7 +55,6 @@
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-success" href="register.html">Registrarse</a>
                     </li>
-                    
                 </ul>
             </div>
         </div>
@@ -70,4 +66,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
- 
