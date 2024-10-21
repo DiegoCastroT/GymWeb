@@ -29,6 +29,13 @@
         .carousel-item {
     transition: none !important;
   }
+  .transparent-button {
+    background: none;
+    border: none;
+    color: white; /* You can change the color of the symbols < and > */
+    font-size: 2rem; /* Adjust the size of the symbols */
+    outline: none;
+  }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -92,12 +99,13 @@
       </div>
     </div>
     
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        >
-      </button>
+    <button class="carousel-control-prev transparent-button" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span>&lt;</span>
+    </button>
+    <button class="carousel-control-next transparent-button" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span>&gt;</span>
+    </button>
+
     </div>
     
 
