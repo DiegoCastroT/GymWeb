@@ -1,0 +1,46 @@
+/* Custom button used in home page */
+.btn-custom {
+    background-color: white; 
+    color: white; 
+    border: none; 
+}
+
+/* Set button styles when mouse is hovering */
+.btn-custom:hover {
+    background-color: darkorange; /* Color on hover */
+    color: white; /* Ensure the text remains white */
+}
+
+/* General styles */
+body {
+    padding-top: 56px; /* Space for fixed navbar */
+}
+
+/* Set text color in navigation links */
+.navbar-nav .nav-link {
+    color: black !important;
+}
+
+/* Show dropdown menu when hovered */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown menu */
+}
+
+/* Hide dropdown menu by default */
+.dropdown-menu {
+    display: none; 
+}
+
+/* Style for transparent button */
+.transparent-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem; /* Adjust size of symbols */
+    outline: none;
+}
+
+/* Remove transition on carousel */
+.carousel-item {
+    transition: none !important;
+}
