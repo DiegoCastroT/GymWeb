@@ -59,3 +59,19 @@ body {
     max-width: 100%; /* Ensure it doesn't overflow the carousel */
     object-fit: cover; /* Cover the area without distortion */
 }
+
+.card{
+    width: 95%;
+}
+
+body{
+    background-color: rgb(240, 233, 233);
+}
+.primary{
+    background-color: orange;
+    color: black;
+}
+.primary:hover {
+    background-color: darkorange; /* Color on hover */
+    color: white; 
+}
