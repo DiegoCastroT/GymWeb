@@ -78,3 +78,57 @@ body{
     background-color: darkorange; /* Color on hover */
     color: white; 
 }
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%; /* Set the name*/
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 1%; /* Margin with user photo and name */
+}
+
+.card-title {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+h1, h4 {
+    margin-left: 2%;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+
+footer {
+    margin-top: 5%; 
+    padding: 20px 0;
+    width: 100%; 
+}
+

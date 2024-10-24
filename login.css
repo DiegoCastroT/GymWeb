@@ -1,0 +1,54 @@
+
+/* Custom button used in home (login, register)*/
+.btn-custom {
+    background-color: white; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+}
+
+/* Set button styles when mouse is hovering */
+.btn-custom:hover {
+    background-color: darkorange; /* Color on hover */
+    color: white; 
+}
+
+/* Hide dropdown menu by default */
+.dropdown-menu {
+    display: none; 
+}
+
+/* Show dropdown menu when hovered */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown menu */
+}
+
+
+/* Set text color in navigation links */
+.navbar-nav .nav-link {
+    color: black !important;
+}
+
+
+html, body {
+    height: 100%; 
+}
+
+header{
+    margin-bottom: 5%;
+}
+footer {
+    margin-top: 10%; 
+    width: 100%;
+}
+
+.loginBtn {
+    background-color: orange;
+    color: black;
+    font-size: 120%;
+    width: 80%;
+}
+
+.card{
+    margin-top: 10%;
+}
+
