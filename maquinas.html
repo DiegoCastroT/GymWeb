@@ -12,90 +12,202 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
-                aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button"
-                            aria-haspopup="true" aria-expanded="false">Servicios</a>
-                        <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
-                            <a class="dropdown-item" href="./maquinas.html">Máquinas</a>
-                            <a class="dropdown-item" href="#">Curso</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Servicios</a>
+                            <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                                <a class="dropdown-item" href="./maquinas.html">Máquinas</a>
+                                <a class="dropdown-item" href="#">Curso</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom" href="register.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+                <div class="col">
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Cinta de correr</h5>
+                            <button type="button" class="btn btn-danger" disabled>No disponible</button>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-custom" href="register.html">Registrarse</a>
-                    </li>
-                </ul>
+                        <div class="card-body mx-auto">
+                            <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong class="text-warning">6 € por hora</strong>
+                                <button type="button" class="btn btn-secondary btn-sm" disabled>Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Bicicleta estática</h5>
+                            <span class="badge rounded-pill text-bg-success"><span
+                                    class="badge text-bg-success">4</span> Disponibles</span>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong class="text-warning">6 € por hora</strong>
+                                <button type="button" class="btn btn-secondary btn-sm">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Máquina de remo</h5>
+                            <a href="#" class="btn btn-danger btn-sm">No disponible</a>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong class="text-warning">6 € por hora</strong>
+                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+                <div class="col">
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Bicicleta de Spinning</h5>
+                            <a href="#" class="btn btn-danger btn-sm">No disponible</a>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong class="text-warning">6 € por hora</strong>
+                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Elíptica</h5>
+                            <a href="#" class="btn btn-danger btn-sm">No disponible</a>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong class="text-warning">6 € por hora</strong>
+                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Cinta de correr</h5>
+                            <a href="#" class="btn btn-danger btn-sm">No disponible</a>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong class="text-warning">6 € por hora</strong>
+                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer style="margin-left: 3%;">
+        <div class="container mt-3 "></div>
+        <div class="row align-items-start">
+            <div class="col-sm mx-auto" style="margin: 2%;">
+                <div>
+                    <img src="images/LOGO.png" class="rounded img-responsive" alt="Logo Gimnasio" style="width:100px;">
+                </div>
+                <div class="mt-2 p-3">
+                    <a href="https://www.youtube.es" target="_blank"><img src="./images/youtube.png" class="rounded"
+                            alt="Twitter" style="width:25px;"></a>
+
+                    <a href="https://www.linkedin.es" target="_blank"><img src="./images/linkedin.png" class="rounded"
+                            alt="Twitter" style="width:25px;"></a>
+
+                    <a href="https://x.com/?lang=es" target="_blank"><img src="./images/twitter-x.svg" class="rounded"
+                            alt="Twitter" style="width:25px;"></a>
+
+                    <a href="https://www.instagram.es" target="_blank"><img src="./images/instagram.svg" class="rounded"
+                            alt="Twitter" style="width:25px;"></a>
+                </div>
+
+            </div>
+
+            <div class="col-sm">
+                <h5>Idiomas</h5>
+                <p>Español</p>
+                <p>English</p>
+                <p>Deuscht</p>
+                <p>Portugues</p>
+                <p>中国人</p>
+            </div>
+            <div class="col-sm ">
+                <h5>Explora</h5>
+                <p>Nuestro gimnansio</p>
+                <p>Trabaja con nosotros</p>
+                <p>Visita guiada</p>
+
+
+            </div>
+            <div class="col-sm text-blakc">
+                <h5>Sobre nosotros</h5>
+                <p>Contáctanos</p>
+                <p>Protección de datos</p>
+                <p>Ayuda</p>
+                <p>Developers</p>
             </div>
         </div>
-    </nav>
-    <div class="container-fluid mt-4">
-
-
-
-    </div>
+        </div>
+        <p class="text-center">Todos los derechos reservados ©. 2024 HiiT!!</p>
+    </footer>
 </body>
-<footer class="ml-2" style="margin-left: 3%;">
-    <div class="container mt-3 "></div>
-    <div class="row align-items-start">
-        <div class="col-sm mx-auto" style="margin: 2%;">
-            <div>
-                <img src="images/LOGO.png" class="rounded img-responsive" alt="Logo Gimnasio" style="width:100px;">
-            </div>
-            <div class="mt-2 p-3">
-                <a href="https://www.youtube.es" target="_blank"><img src="./images/youtube.png" class="rounded"
-                        alt="Twitter" style="width:25px;"></a>
 
-                <a href="https://www.linkedin.es" target="_blank"><img src="./images/linkedin.png" class="rounded"
-                        alt="Twitter" style="width:25px;"></a>
-
-                <a href="https://x.com/?lang=es" target="_blank"><img src="./images/twitter-x.svg" class="rounded"
-                        alt="Twitter" style="width:25px;"></a>
-
-                <a href="https://www.instagram.es" target="_blank"><img src="./images/instagram.svg" class="rounded"
-                        alt="Twitter" style="width:25px;"></a>
-            </div>
-        </div>
-        <div class="col-sm">
-            <h5>Idiomas</h5>
-            <p>Español</p>
-            <p>English</p>
-            <p>Deuscht</p>
-            <p>Portugues</p>
-            <p>中国人</p>
-        </div>
-        <div class="col-sm ">
-            <h5>Explora</h5>
-            <p>Nuestro gimnansio</p>
-            <p>Trabaja con nosotros</p>
-            <p>Visita guiada</p>
-
-
-        </div>
-        <div class="col-sm text-blakc">
-            <h5>Sobre nosotros</h5>
-            <p>Contáctanos</p>
-            <p>Protección de datos</p>
-            <p>Ayuda</p>
-            <p>Developers</p>
-        </div>
-    </div>
-    </div>
-    <p class="text-center">Todos los derechos reservados ©. 2024 HiiT!!</p>
-</footer>
+</html>
