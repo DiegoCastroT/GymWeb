@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="home.css"> <!-- Vinculando tu archivo CSS -->
 </head>
 <body>
-
+<header>
     <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -24,7 +24,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
                         <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
-                            <a class="dropdown-item" href="#">Máquinas</a>
+                            <a class="dropdown-item" href="./maquinas.html">Máquinas</a>
                             <a class="dropdown-item" href="#">Curso</a>
                         </div>
                     </li>
@@ -41,9 +41,10 @@
             </div>
         </div>
     </nav>
-    
+    </header>
 
 <!-- Carousel: Use d-flex to allow center propierties-->
+ <main>
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -170,21 +171,22 @@
         </div>
     </div>
 </section>
-<footer class="ml-2" style="margin-left: 3%;">
+</main>
+<footer style="margin-left: 3%;">
   <div class="container mt-3 "></div>
   <div class="row align-items-start">
       <div class="col-sm mx-auto" style="margin: 2%;">
           <div>
               <img src="images/LOGO.png" class="rounded img-responsive" alt="Logo Gimnasio" style="width:100px;">
           </div>
-          <div class="mt-2 ">
-              <img src="./images/youtube.png" class="rounded" alt="Twitter" style="width:25px;">
+          <div class="mt-2 p-3">
+            <a href="https://www.youtube.es" target="_blank"><img src="./images/youtube.png" class="rounded" alt="Twitter" style="width:25px;"></a>
           
-              <img src="./images/linkedin.png" class="rounded" alt="Twitter" style="width:25px;">
+            <a href="https://www.linkedin.es" target="_blank"><img src="./images/linkedin.png" class="rounded" alt="Twitter" style="width:25px;"></a>
           
-              <img src="./images/twitter-x.svg" class="rounded" alt="Twitter" style="width:25px;">
+            <a href="https://x.com/?lang=es" target="_blank"><img src="./images/twitter-x.svg" class="rounded" alt="Twitter" style="width:25px;"></a>
           
-              <img src="./images/instagram.svg" class="rounded" alt="Twitter" style="width:25px;">
+            <a href="https://www.instagram.es" target="_blank"><img src="./images/instagram.svg" class="rounded" alt="Twitter" style="width:25px;"></a>
           </div>
           
       </div>
@@ -192,27 +194,29 @@
       <div class="col-sm">
           <h5>Idiomas</h5>
           <p>Español</p>
-          <p>Frances</p>
-          <p>Ingles</p>
-          <p>Chino</p>
+          <p>English</p>
+          <p>Deuscht</p>
+          <p>Portugues</p>
+          <p>中国人</p>
       </div>
       <div class="col-sm ">
           <h5>Explora</h5>
-          <p>Español</p>
-          <p>Frances</p>
-          <p>Ingles</p>
-          <p>Chino</p>
+          <p>Nuestro gimnansio</p>
+          <p>Trabaja con nosotros</p>
+          <p>Visita guiada</p>
+          
 
       </div>
       <div class="col-sm text-blakc">
           <h5>Sobre nosotros</h5>
-          <p>Contacto</p>
-          <p>Frances</p>
-          <p>Ingles</p>
-          <p>Chino</p>
+          <p>Contáctanos</p>
+          <p>Protección de datos</p>
+          <p>Ayuda</p>
+          <p>Developers</p>
       </div>
   </div>
   </div>
+  <p class="text-center">Todos los derechos reservados ©. 2024 HiiT!!</p>
 </footer>
     <!-- Bootstrap JS desde tu instalación local -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
