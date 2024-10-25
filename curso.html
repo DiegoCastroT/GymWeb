@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/LOGO.png" type="image/png">
+    <title>HiiT!!</title>
+    <!-- Bootstrap 5 CSS desde tu instalación local -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home.css"> <!-- Vinculando tu archivo CSS -->
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                        <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                            <a class="dropdown-item" href="./maquinas.html">Máquinas</a>
+                            <a class="dropdown-item" href="./curso.html">Curso</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-custom" href="register.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+ 
+
+    <!-- Bootstrap JS y jQuery desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </header>
+
+<!-- Carousel: Use d-flex to allow center propierties-->
+ <main>
+    <section class="mt-5" style="margin-left: 2%;">
+    
+        <div class="container-fluid mt-4">
+            <div class="row row-cols-lg-3 g-5 col-12">
+                <div>
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Clase Fuerza Básica</h5>
+                            <button type="button btn-s" class="btn btn-success"  >3 personas</button>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/Pepe.jpg" class="card-img h-15" alt="cinta para correr">
+                            <p></p>
+                            <p class="card-text" >Entrena fuerza y resistencia. Movimientos suaves, enfoque en técnica y control. Perfecta para tonificar y cuidar tu cuerpo sin impacto alto. ¡Transforma tu cuerpo!</p>
+                            <p></p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:40%">40%</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong style="color:green;">12€ por hora</strong>
+                                <button type="button" class="btn btn-warning btn-sm" >Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Clase Fuerza Media</h5>
+                            <button type="button btn-s" class="btn btn-success" >1 persona</button>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/Pepe.jpg" class="card-img h-15" alt="cinta para correr">
+                            <p></p>
+                            <p class="card-text">Entrena fuerza y resistencia con una buena intensidad. Tonifica, mejora tu energía y supera tus límites en cada sesión. ¡Transforma tu cuerpo!</p>
+                            <p></p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:75%">75%</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong style="color:green;">12€ por hora</strong>
+                                <button type="button" class="btn btn-warning btn-sm" >Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Clase Fuerza Intesa</h5>
+                            <button type="button btn-sm" class="btn btn-danger">No disponible</button>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/Pepe.jpg" class="card-img h-15" alt="cinta para correr">
+                            <p></p>
+                            <p class="card-text" >Entrena fuerza y resistencia con alta intensidad. Tonifica, mejora tu energía y supera tus límites en cada sesión. ¡Transforma tu cuerpo!</p>
+                            <p></p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:95%">95%</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong style="color:green;">12€ por hora</strong>
+                                <button type="button" class="btn btn-warning btn-sm" disabled>Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div>
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Clase Resistencia Básica</h5>
+                            <button type="button btn-s" class="btn btn-success" >1 personas</button>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/PEPE2.jpg" class="card-img h-15" alt="cinta para correr">
+                            <p></p>
+                            <p class="card-text">Clase de cardio inicial para principiantes. Movimientos suaves y de bajo impacto, perfectos para mejorar la resistencia y la coordinación. ¡Diviértete mientras te pones en forma!</p>
+                            <p></p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:35%">35%</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong style="color:green;">10€ por hora</strong>
+                                <button type="button" class="btn btn-warning btn-sm" >Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Clase Resistencia Intermedia</h5>
+                            <button type="button btn-s" class="btn btn-danger">No disponible</button>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/PEPE2.jpg" class="card-img h-15" alt="cinta para correr">
+                            <p></p>
+                            <p class="card-text">Ritmo moderado, combinando movimientos activos y pausas. Ideal para mejorar condición física sin exceso de intensidad. ¡Actívate y disfruta!</p>
+                            <p></p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:70%">70%</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong style="color:green;">12€ por hora</strong>
+                                <button type="button" class="btn btn-warning btn-sm" disabled>Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="card ">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Clase Resistencia Intesa</h5>
+                            <button type="button btn-sm" class="btn btn-success">3 personas</button>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/PEPE2.jpg" class="card-img h-15" alt="cinta para correr">
+                            <p></p>
+                            <p class="card-text" >Clase de cardio intensa para quemar calorías y mejorar tu resistencia. Movimientos rápidos y explosivos que te mantendrán activo. ¡Desafía tus límites y siente la energía!</p>
+                            <p></p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:99%">99%</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center ">
+                                <strong style="color:green;">10€ por hora</strong>
+                                <button type="button" class="btn btn-warning btn-sm" >Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+          </div>
+    </section>
+</main>
+<footer style="margin-left: 3%;">
+  <div class="container mt-3 "></div>
+  <div class="row align-items-start">
+      <div class="col-sm mx-auto" style="margin: 2%;">
+          <div>
+              <img src="images/LOGO.png" class="rounded img-responsive" alt="Logo Gimnasio" style="width:100px;">
+          </div>
+          <div class="mt-2 p-3">
+            <a href="https://www.youtube.es" target="_blank"><img src="./images/youtube.png" class="rounded" alt="Twitter" style="width:25px;"></a>
+          
+            <a href="https://www.linkedin.es" target="_blank"><img src="./images/linkedin.png" class="rounded" alt="Twitter" style="width:25px;"></a>
+          
+            <a href="https://x.com/?lang=es" target="_blank"><img src="./images/twitter-x.svg" class="rounded" alt="Twitter" style="width:25px;"></a>
+          
+            <a href="https://www.instagram.es" target="_blank"><img src="./images/instagram.svg" class="rounded" alt="Twitter" style="width:25px;"></a>
+          </div>
+          
+      </div>
+
+      <div class="col-sm">
+          <h5>Idiomas</h5>
+          <p>Español</p>
+          <p>English</p>
+          <p>Deuscht</p>
+          <p>Portugues</p>
+          <p>中国人</p>
+      </div>
+      <div class="col-sm ">
+          <h5>Explora</h5>
+          <p>Nuestro gimnansio</p>
+          <p>Trabaja con nosotros</p>
+          <p>Visita guiada</p>
+          
+
+      </div>
+      <div class="col-sm text-blakc">
+          <h5>Sobre nosotros</h5>
+          <p>Contáctanos</p>
+          <p>Protección de datos</p>
+          <p>Ayuda</p>
+          <p>Developers</p>
+      </div>
+  </div>
+  </div>
+  <p class="text-center">Todos los derechos reservados ©. 2024 HiiT!!</p>
+</footer>
+    <!-- Bootstrap JS desde tu instalación local -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
