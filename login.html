@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/LOGO.png" type="image/png">
+    <title>HiiT!!</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                            <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                                <a class="dropdown-item" href="#">Máquinas</a>
+                                <a class="dropdown-item" href="#">Curso</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom" href="register.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <form class="was-validated" id="loginForm">
+                            <h2 class="card-title text-center mb-4">Login</h2>
+
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Introduzca su email..." required>
+                                <div class="invalid-feedback">Por favor, rellena este campo con un email válido.</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label">Contraseña:</label>
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Introduzca su contraseña..." required>
+                                <div class="invalid-feedback">Por favor, rellena este campo.</div>
+                            </div>
+                            
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="loginCheck" name="remember" required>
+                                <label class="form-check-label" for="loginCheck">Acepto los términos y condiciones de Hiit!!</label>
+                                <div class="invalid-feedback">Marca para continuar.</div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn loginBtn">Login</button>
+                            </div>
+                            <a href="#" class="toggle-link d-block text-center mt-3">¿No tienes cuenta? Regístrate</a>
+                        </form>
+
+                        <form class="was-validated" id="registerForm" style="display: none;">
+                            <h2 class="card-title text-center mb-4">Registrarse</h2>
+                            
+                            <div class="mb-3">
+                                <label for="regEmail" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="regEmail" placeholder="Introduzca su email..." required>
+                                <div class="invalid-feedback">Por favor, rellena este campo con un email válido.</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="regUsername" class="form-label">Nombre de usuario:</label>
+                                <input type="text" class="form-control" id="regUsername" placeholder="Introduzca su nombre de usuario..." required>
+                                <div class="invalid-feedback">Por favor, rellena este campo.</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="regPassword" class="form-label">Contraseña:</label>
+                                <input type="password" class="form-control" id="regPassword" placeholder="Introduzca su contraseña..." required>
+                                <div class="invalid-feedback">Por favor, rellena este campo.</div>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="registerCheck" name="remember" required>
+                                <label class="form-check-label" for="registerCheck">Acepto los términos y condiciones de Hiit!!</label>
+                                <div class="invalid-feedback">Marca para continuar.</div>
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn loginBtn">Registrarse</button>
+                            </div>
+                            
+                            <a href="#" class="toggle-link d-block text-center mt-3">¿Ya tienes cuenta? Iniciar sesión</a>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="ml-2" style="margin-left: 3%;">
+        <div class="container mt-3"></div>
+        <div class="row align-items-start">
+            <div class="col-sm mx-auto" style="margin: 2%;">
+                <div>
+                    <img src="images/LOGO.png" class="rounded img-responsive" alt="Logo Gimnasio" style="width:100px;">
+                </div>
+                <div class="mt-2">
+                    <img src="./images/youtube.png" class="rounded" alt="YouTube" style="width:25px;">
+                    <img src="./images/linkedin.png" class="rounded" alt="LinkedIn" style="width:25px;">
+                    <img src="./images/twitter-x.svg" class="rounded" alt="Twitter" style="width:25px;">
+                    <img src="./images/instagram.svg" class="rounded" alt="Instagram" style="width:25px;">
+                </div>
+            </div>
+            <div class="col-sm">
+                <h5>Idiomas</h5>
+                <p>Español</p>
+                <p>Francés</p>
+                <p>Inglés</p>
+                <p>Chino</p>
+            </div>
+            <div class="col-sm">
+                <h5>Explora</h5>
+                <p>Español</p>
+                <p>Francés</p>
+                <p>Inglés</p>
+                <p>Chino</p>
+            </div>
+            <div class="col-sm">
+                <h5>Sobre nosotros</h5>
+                <p>Contacto</p>
+                <p>Francés</p>
+                <p>Inglés</p>
+                <p>Chino</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS desde tu instalación local -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
