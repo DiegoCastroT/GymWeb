@@ -37,7 +37,10 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#popupModal">
+                                Contacto
+                            </button>
+                            
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
@@ -49,6 +52,41 @@
                 </div>
             </div>
         </nav>
+        <!-- Popup Modal-->
+<div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popupModalLabel">Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="contact_form" name="contact_form" method="post">
+                    <div class="mb-5">
+                        <label for="email_addr">Email</label>
+                        <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-5">
+                        <label for="name_input">Nombre</label>
+                        <input type="text" required maxlength="50" class="form-control" id="name_input" name="name"
+                            placeholder="Name">
+                    </div>
+                    <div class="mb-5">
+                        <label for="phone_input">Teléfono</label>
+                        <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                            placeholder="Phone">
+                    </div>
+                    <div class="mb-5">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
     </header>
     <main>
         <section class="mt-4">
@@ -300,7 +338,6 @@
         <p class="text-center">Todos los derechos reservados ©. 2024 HiiT!!</p>
     </footer>
 </body>
-<<<<<<< Updated upstream
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -308,6 +345,4 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-=======
->>>>>>> Stashed changes
 </html>

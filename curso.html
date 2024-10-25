@@ -7,51 +7,81 @@
     <title>HiiT!!</title>
     <!-- Bootstrap 5 CSS desde tu instalación local -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/home.css"> <!-- Vinculando tu archivo CSS -->
+    <link rel="stylesheet" href="login.css"> <!-- Vinculando tu archivo CSS -->
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ms-auto"> 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
-                        <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
-                            <a class="dropdown-item" href="./maquinas.html">Máquinas</a>
-                            <a class="dropdown-item" href="./curso.html">Curso</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-custom" href="register.html">Registrarse</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                            <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                                <a class="dropdown-item" href="./maquinas.html">Máquinas</a>
+                                <a class="dropdown-item" href="./curso.html">Curso</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#popupModal">
+                                Contacto
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom" href="register.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="popupModalLabel">Contacto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contact_form" name="contact_form" method="post">
+                            <div class="mb-5">
+                                <label for="email_addr">Email</label>
+                                <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-5">
+                                <label for="name_input">Nombre</label>
+                                <input type="text" required maxlength="50" class="form-control" id="name_input" name="name"
+                                    placeholder="Name">
+                            </div>
+                            <div class="mb-5">
+                                <label for="phone_input">Teléfono</label>
+                                <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                                    placeholder="Phone">
+                            </div>
+                            <div class="mb-5">
+                                <label for="message">Mensaje</label>
+                                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Aceptar</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    
- 
-
-    <!-- Bootstrap JS y jQuery desde CDN -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
     </header>
 
 <!-- Carousel: Use d-flex to allow center propierties-->
- <main class="mt-5">
+ <main>
     <section class="mt-5" style="margin-left: 2%;">
     
         <div class="container-fluid mt-4">
@@ -164,7 +194,7 @@
                         <div class="card-body mx-auto">
                             <img src="images/PEPE2.jpg" class="card-img h-15" alt="cinta para correr">
                             <p></p>
-                            <p class="card-text">Ritmo moderado, combinando movimientos activos y pausas. Ideal para mejorar condición física sin exceso de intensidad. ¡Actívate y disfruta!</p>
+                            <p class="card-text">Ritmo moderado, combinando movimientos activos y pausas. Ideal para mejorar condición física sin exceso de intensidad. ¡Actívate y 
                             <p></p>
                             <div class="progress">
                                 <div class="progress-bar" style="width:70%">70%</div>
@@ -211,7 +241,9 @@
   <div class="row align-items-start">
       <div class="col-sm mx-auto" style="margin: 2%;">
           <div>
-              <img src="images/LOGO.png" class="rounded img-responsive" alt="Logo Gimnasio" style="width:100px;">
+            <a href="./index.html">
+                <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
+            </a>
           </div>
           <div class="mt-2 p-3">
             <a href="https://www.youtube.es" target="_blank"><img src="./images/youtube.png" class="rounded" alt="Twitter" style="width:25px;"></a>
