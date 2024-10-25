@@ -1,5 +1,4 @@
-
-/* Custom button used in home (login, register)*/
+/* Custom button used in home (login, register) */
 .btn-custom {
     background-color: white; 
     color: rgb(0, 0, 0); 
@@ -22,24 +21,29 @@
     display: block; /* Show dropdown menu */
 }
 
-
 /* Set text color in navigation links */
 .navbar-nav .nav-link {
     color: black !important;
 }
 
-
 html, body {
     height: 100%; 
+    margin: 0; 
 }
 
-header{
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
     margin-bottom: 5%;
 }
+
 footer {
-    display:grid ;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
+    margin-top: auto; 
+    padding: 20px;
+    text-align: center; 
 }
 
 .loginBtn {
@@ -49,8 +53,7 @@ footer {
     width: 80%;
 }
 
-.card{
-    margin-top: 10%;
+.card {
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
-
-
