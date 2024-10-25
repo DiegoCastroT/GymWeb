@@ -37,8 +37,9 @@ header{
     margin-bottom: 5%;
 }
 footer {
-    margin-top: 10%; 
-    width: 100%;
+    display:grid ;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
 }
 
 .loginBtn {
@@ -53,18 +54,3 @@ footer {
 }
 
 
-.bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Para que esté detrás del contenido */
-    transform: translate(-50%, -50%);
-}
-.content {
-    position: relative;
-    z-index: 1; /* Asegura que el contenido esté por encima del video */
-}
