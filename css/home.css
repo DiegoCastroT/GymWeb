@@ -64,12 +64,11 @@ body {
     width: 95%;
 }
 
-body{
-    background-color: rgb(240, 233, 233);
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
+body {
+    overflow-x: hidden;
+    width: 100%; 
 }
+
 .primary{
     background-color: orange;
     color: black;
@@ -125,10 +124,7 @@ h1, h4 {
     align-items: center;
 }
 
-
 footer {
-    margin-top: 5%; 
-    padding: 20px 0;
-    width: 100%; 
+    margin: 0;
+    position: relative;
 }
-
