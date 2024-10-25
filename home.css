@@ -129,6 +129,8 @@ h1, h4 {
 footer {
     margin-top: 5%; 
     padding: 20px 0;
-    width: 100%; 
+    width: auto; 
+   
 }
+
 

@@ -38,7 +38,7 @@ header{
 }
 footer {
     margin-top: 10%; 
-    width: 100%;
+    width: auto;
 }
 
 .loginBtn {
@@ -52,3 +52,9 @@ footer {
     margin-top: 10%;
 }
 
+body{
+    background-color: rgb(240, 233, 233);
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
