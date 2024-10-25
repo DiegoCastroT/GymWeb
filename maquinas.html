@@ -8,7 +8,8 @@
     <title>HiiT!!</title>
     <!-- Bootstrap 5 CSS desde tu instalación local -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="home.css"> <!-- Vinculando tu archivo CSS -->
+    <link rel="stylesheet" href="home.css">
+    <!-- Vinculando tu archivo CSS -->
 </head>
 
 <body>
@@ -48,7 +49,20 @@
         </nav>
     </header>
     <main>
+
         <section class="mt-4">
+            <div class="btn-group m-3">
+                <button type="button" class="btn btn-warning ">Elige tipo de entrenamiento</button>
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Fuerza y musculación</a></li>
+                    <li><a class="dropdown-item" href="#">Cardio</a></li>
+                    <li><a class="dropdown-item" href="#">Funcional</a></li>
+                </ul>
+            </div>
             <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
                 <div class="col">
                     <div class="card ">
@@ -80,7 +94,73 @@
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center ">
                                 <strong class="text-warning">6 € por hora</strong>
-                                <button type="button" class="btn btn-secondary btn-sm">Reservar</button>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Reservar
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <nav class="navbar navbar-expand-lg bg-light navbar-light navbar-collapse">
+                                                    <div class="container-fluid">
+                                                        <h3 class="modal-title">Reserva de máquinas
+                                                        </h3>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                </nav>
+
+                                            </div>
+                                            <p class="col-sm-9 m-3">Complete los detalles para reservar su equipo
+                                            </p>
+                                            <div>
+                                                
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <div class="text-blakc align-items-start mb-3">
+                                                            <div>
+                                                                <label><strong>Nombre</strong></label>
+                                                                <input type="text" class="form-control" id="nombre">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label><strong>Email</strong></label>
+                                                                <input type="email" class="form-control"
+                                                                    placeholder="name@example.com">
+                                                            </div>
+                                                            <div>
+                                                                <label><strong>Fecha</strong></label>
+                                                                <input type="date" class="form-control">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="hora"
+                                                                    class="form-label"><strong>Hora</strong></label>
+                                                                <input type="time" class="form-control">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="duracion"
+                                                                    class="form-label"><strong>Duración</strong></label>
+                                                                <input type="time" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-dark">Confirmar reserva</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -89,7 +169,7 @@
                     <div class="card ">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
                             <h5>Máquina de remo</h5>
-                            <a href="#" class="btn btn-danger btn-sm">No disponible</a>
+                            <button type="button" class="btn btn-danger" disabled>No disponible</button>
                         </div>
                         <div class="card-body mx-auto">
                             <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
@@ -97,7 +177,7 @@
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center ">
                                 <strong class="text-warning">6 € por hora</strong>
-                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                                <button type="button" class="btn btn-secondary btn-sm" disabled>Reservar</button>
                             </div>
                         </div>
                     </div>
@@ -109,7 +189,7 @@
                     <div class="card ">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
                             <h5>Bicicleta de Spinning</h5>
-                            <a href="#" class="btn btn-danger btn-sm">No disponible</a>
+                            <button type="button" class="btn btn-danger" disabled>No disponible</button>
                         </div>
                         <div class="card-body mx-auto">
                             <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
@@ -117,7 +197,7 @@
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center ">
                                 <strong class="text-warning">6 € por hora</strong>
-                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                                <button type="button" class="btn btn-secondary btn-sm" disabled>Reservar</button>
                             </div>
                         </div>
                     </div>
@@ -126,7 +206,7 @@
                     <div class="card ">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
                             <h5>Elíptica</h5>
-                            <a href="#" class="btn btn-danger btn-sm">No disponible</a>
+                            <button type="button" class="btn btn-danger" disabled>No disponible</button>
                         </div>
                         <div class="card-body mx-auto">
                             <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
@@ -134,7 +214,7 @@
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center ">
                                 <strong class="text-warning">6 € por hora</strong>
-                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                                <button type="button" class="btn btn-secondary btn-sm" disabled>Reservar</button>
                             </div>
                         </div>
                     </div>
@@ -142,8 +222,8 @@
                 <div class="col">
                     <div class="card ">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
-                            <h5>Cinta de correr</h5>
-                            <a href="#" class="btn btn-danger btn-sm">No disponible</a>
+                            <h5>Escaladora</h5>
+                            <button type="button" class="btn btn-danger" disabled>No disponible</button>
                         </div>
                         <div class="card-body mx-auto">
                             <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
@@ -151,7 +231,7 @@
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center ">
                                 <strong class="text-warning">6 € por hora</strong>
-                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                                <button type="button" class="btn btn-secondary btn-sm" disabled>Reservar</button>
                             </div>
                         </div>
                     </div>
@@ -171,16 +251,12 @@
 
                     <a href="https://www.linkedin.es" target="_blank"><img src="./images/linkedin.png" class="rounded"
                             alt="Twitter" style="width:25px;"></a>
-
                     <a href="https://x.com/?lang=es" target="_blank"><img src="./images/twitter-x.svg" class="rounded"
                             alt="Twitter" style="width:25px;"></a>
-
                     <a href="https://www.instagram.es" target="_blank"><img src="./images/instagram.svg" class="rounded"
                             alt="Twitter" style="width:25px;"></a>
                 </div>
-
             </div>
-
             <div class="col-sm">
                 <h5>Idiomas</h5>
                 <p>Español</p>
@@ -194,8 +270,6 @@
                 <p>Nuestro gimnansio</p>
                 <p>Trabaja con nosotros</p>
                 <p>Visita guiada</p>
-
-
             </div>
             <div class="col-sm text-blakc">
                 <h5>Sobre nosotros</h5>
@@ -209,5 +283,10 @@
         <p class="text-center">Todos los derechos reservados ©. 2024 HiiT!!</p>
     </footer>
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </html>
