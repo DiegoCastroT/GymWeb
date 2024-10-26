@@ -7,9 +7,10 @@
     <title>HiiT!!</title>
     <!-- Bootstrap 5 CSS desde tu instalación local -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="login.css"> <!-- Vinculando tu archivo CSS -->
+    <link rel="stylesheet" href="css/curso.css"> <!-- Vinculando tu archivo CSS -->
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
             <div class="container-fluid">
@@ -37,50 +38,14 @@
                             <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-custom" href="register.html">Registrarse</a>
+                            <a class="nav-link btn btn-custom" href="login.html">Registrarse</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="popupModalLabel">Contacto</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="contact_form" name="contact_form" method="post">
-                            <div class="mb-5">
-                                <label for="email_addr">Email</label>
-                                <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
-                                    placeholder="name@example.com">
-                            </div>
-                            <div class="mb-5">
-                                <label for="name_input">Nombre</label>
-                                <input type="text" required maxlength="50" class="form-control" id="name_input" name="name"
-                                    placeholder="Name">
-                            </div>
-                            <div class="mb-5">
-                                <label for="phone_input">Teléfono</label>
-                                <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
-                                    placeholder="Phone">
-                            </div>
-                            <div class="mb-5">
-                                <label for="message">Mensaje</label>
-                                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Aceptar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
     </header>
 
-<!-- Carousel: Use d-flex to allow center propierties-->
  <main>
     <section class="mt-5" style="margin-left: 2%;">
     
@@ -90,21 +55,21 @@
                     <div class="card ">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
                             <h5>Clase Fuerza Básica</h5>
-                            <button type="button btn-s" class="btn btn-success"  >3 personas</button>
+                            <button type="button btn-s" class="btn btn-success"> Plazas disponibles: 3</button>
                         </div>
                         <div class="card-body mx-auto">
                             <img src="images/Pepe.jpg" class="card-img h-15" alt="cinta para correr">
                             <p></p>
                             <p class="card-text" >Entrena fuerza y resistencia. Movimientos suaves, enfoque en técnica y control. Perfecta para tonificar y cuidar tu cuerpo sin impacto alto. ¡Transforma tu cuerpo!</p>
-                            <p></p>
+                            <p class="text-muted">Nivel de dificultad: Alto</p>
                             <div class="progress">
-                                <div class="progress-bar" style="width:40%">40%</div>
+                                <div class="progress-bar" style="width:40%"></div>
                             </div>
                         </div>
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center ">
                                 <strong style="color:green;">12€ por hora</strong>
-                                <button type="button" class="btn btn-warning btn-sm" >Reservar</button>
+                                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#popupModal">Reservar</button>
                             </div>
                         </div>
                     </div>
@@ -148,7 +113,7 @@
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center">
                                 <strong style="color:green;">10€ por hora</strong>
-                                <button type="button" class="btn btn-warning btn-sm">Reservar</button>
+                                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#popupModal">Reservar</button>
                             </div>
                         </div>
                     </div>
@@ -170,7 +135,7 @@
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center">
                                 <strong style="color:green;">12€ por hora</strong>
-                                <button type="button" class="btn btn-warning btn-sm">Reservar</button>
+                                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#popupModal">Reservar</button>
                             </div>
                         </div>
                     </div>
@@ -192,7 +157,7 @@
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center">
                                 <strong style="color:green;">18€ por hora</strong>
-                                <button type="button" class="btn btn-warning btn-sm">Reservar</button>
+                                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#popupModal">Reservar</button>
                             </div>
                         </div>
                     </div>
@@ -214,15 +179,51 @@
                         <div class="card-footer">
                             <div class="card-body d-flex justify-content-between align-items-center">
                                 <strong style="color:green;">14€ por hora</strong>
-                                <button type="button" class="btn btn-warning btn-sm">Reservar</button>
+                                <!-- Botón que abre el modal -->
+                                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#popupModal">Reservar</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                
         </div>
     </section>
 </main>
+
+<!-- Popup Modal -->
+<div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popupModalLabel">Contacto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="contact_form" name="contact_form" method="post">
+                    <div class="mb-5">
+                        <label for="email_addr">Email</label>
+                        <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-5">
+                        <label for="name_input">Nombre</label>
+                        <input type="text" required maxlength="50" class="form-control" id="name_input" name="name"
+                            placeholder="Name">
+                    </div>
+                    <div class="mb-5">
+                        <label for="phone_input">Teléfono</label>
+                        <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                            placeholder="Phone">
+                    </div>
+                    <div class="mb-5">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer style="margin-top: 3%;">
     <div class="container mt-3">
@@ -264,9 +265,10 @@
     </div>
 </footer>
 
-<!-- Bootstrap JS y jQuery desde CDN -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 </html>
