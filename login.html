@@ -17,28 +17,23 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">
+                <a class="navbar-brand" href="#">
                     <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto"> 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">Servicios</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
                             <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
                                 <a class="dropdown-item" href="./maquinas.html">Máquinas</a>
                                 <a class="dropdown-item" href="./curso.html">Curso</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#popupModal">
-                                Contacto
-                            </button>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
@@ -50,41 +45,6 @@
                 </div>
             </div>
         </nav>
-        <div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="popupModalLabel">Contacto</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="contact_form" name="contact_form" method="post">
-                            <div class="mb-5">
-                                <label for="email_addr">Email</label>
-                                <input type="email" required maxlength="50" class="form-control" id="email_addr"
-                                    name="email" placeholder="name@example.com">
-                            </div>
-                            <div class="mb-5">
-                                <label for="name_input">Nombre</label>
-                                <input type="text" required maxlength="50" class="form-control" id="name_input"
-                                    name="name" placeholder="Name">
-                            </div>
-                            <div class="mb-5">
-                                <label for="phone_input">Teléfono</label>
-                                <input type="tel" required maxlength="50" class="form-control" id="phone_input"
-                                    name="Phone" placeholder="Phone">
-                            </div>
-                            <div class="mb-5">
-                                <label for="message">Mensaje</label>
-                                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Aceptar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </header>
 
     <section>
@@ -251,11 +211,10 @@
             </div>
             <p class="text-center mt-4">&copy; 2024 HiiT. Todos los derechos reservados.</p>
         </div>
-        <p class="text-center">Todos los derechos reservados ©. 2024 HiiT!!</p>
     </footer>
     
     <!-- Bootstrap JS desde tu instalación local -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
 </body>
-
 </html>
