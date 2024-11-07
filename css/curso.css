@@ -1,0 +1,109 @@
+/* Custom button used in home (login, register) */
+.btn-custom {
+    background-color: white; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+}
+
+/* Set button styles when mouse is hovering */
+.btn-custom:hover {
+    background-color: darkorange; /* Color on hover */
+    color: white; 
+}
+
+.loginBtn {
+    background-color: darkorange; /* Color on hover */
+    color: black; 
+    width: 80%;
+}
+
+/* Hide dropdown menu by default */
+.dropdown-menu {
+    display: none; 
+}
+
+/* Show dropdown menu when hovered */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown menu */
+}
+
+/* Set text color in navigation links */
+.navbar-nav .nav-link {
+    color: black !important;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1; /* Permite que el body ocupe el espacio restante */
+}
+
+.card {
+    margin-bottom: 7%;
+    margin-top: 6%;
+}
+
+body{
+    background-color: rgb(240, 233, 233);
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+footer {
+    margin-top: auto; /* Mantiene el footer en la parte inferior */
+    background-color: aliceblue;
+}
+
+.container, footer {
+    position: relative; 
+    z-index: 1;
+}
+
+
+header{
+    margin-bottom: 3%;
+}
+
+.progress-bar {
+    background: linear-gradient(to right, #13d369, #caf74e, #fcc95c, #f74e4e);
+    color: black;
+}
+
+.card {
+    width: 95%;
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition for card hover effects */
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+.modal-header {
+    background-color: darkorange; 
+}
+
+#contact_form .form-control:focus {
+    border-color: darkorange;
+    box-shadow: 0 0 5px rgba(255, 196, 0, 0.3);
+}
+
+
+/* Textarea */
+#contact_form #message {
+    resize: none;
+}
+
+/* Submit Button */
+#contact_form .btn-primary {
+    background-color: darkorange;
+    border-color: darkorange;
+}
+

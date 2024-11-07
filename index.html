@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,77 +9,69 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/home.css"> <!-- Vinculando tu archivo CSS -->
 </head>
-
-
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">Servicios</a>
-                            <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
-                                <a class="dropdown-item" href="./maquinas.html">Máquinas</a>
-                                <a class="dropdown-item" href="./curso.html">Curso</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#popupModal">
-                                Contacto
-                            </button>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-custom" href="register.html">Registrarse</a>
-                        </li>
-                    </ul>
+<header>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                        <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                            <a class="dropdown-item" href="./maquinas.html">Máquinas</a>
+                            <a class="dropdown-item" href="./curso.html">Curso</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-custom me-2" href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-custom" href="register.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Carousel: Use d-flex to allow center propierties-->
+ <main>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/carousel1.png" alt="Los Angeles" class="d-block w-100">
+            <div class="carousel-caption d-flex justify-content-center align-items-center text-center" style="height: 100%;">
+                <div>
+                    <h1>¡Descubre tu mejor versión en nuestro gimnasio!</h1>
+                    <a href="login.html" class="btn carousel-button">Regístrate Ahora</a>
                 </div>
             </div>
-        </nav>
-    </header>
-               <!-- Popup Modal-->
-<div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="popupModalLabel">Contacto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="carousel-item">
+            <img src="images/carousel2.png" alt="Chicago" class="d-block w-100">
+            <div class="carousel-caption d-flex justify-content-center align-items-center text-center" style="height: 100%;">
+                <div>
+                    <h1>Entrena con los mejores y alcanza tus metas</h1>
+                    <a href="login.html" class="btn carousel-button">Regístrate Ahora</a>
+                </div>
             </div>
-            <div class="modal-body">
-                <form id="contact_form" name="contact_form" method="post">
-                    <div class="mb-5">
-                        <label for="email_addr">Email</label>
-                        <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
-                            placeholder="name@example.com">
-                    </div>
-                    <div class="mb-5">
-                        <label for="name_input">Nombre</label>
-                        <input type="text" required maxlength="50" class="form-control" id="name_input" name="name"
-                            placeholder="Name">
-                    </div>
-                    <div class="mb-5">
-                        <label for="phone_input">Teléfono</label>
-                        <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
-                            placeholder="Phone">
-                    </div>
-                    <div class="mb-5">
-                        <label for="message">Mensaje</label>
-                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Aceptar</button>
-                </form>
+        </div>
+        <div class="carousel-item">
+            <img src="images/carousel3.png" alt="New York" class="d-block w-100">
+            <div class="carousel-caption d-flex justify-content-center align-items-center text-center" style="height: 100%;">
+                <div>
+                    <h1>Transforma tu cuerpo, transforma tu vida.</h1>
+                    <a href="login.html" class="btn carousel-button">Regístrate Ahora</a>
+                </div>
             </div>
         </div>
     </div>
@@ -95,199 +86,135 @@
 </div>
 <section class="mt-4" style="margin-left: 2%; margin-bottom: 50px;">
 
+    <h1 style="margin-top: 3%;">Opiniones</h1>
+    <h4 style="margin-top: 1%;">Descubre lo que opinan de nosotros</h4>
 
-    <!-- Carousel: Use d-flex to allow center propierties-->
-    <main>
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/carousel1.png" alt="Los Angeles" class="d-block w-100">
-                    <div class="carousel-caption d-flex justify-content-center align-items-center text-center"
-                        style="height: 100%;">
-                        <div>
-                            <h1>¡Descubre tu mejor versión en nuestro gimnasio!</h1>
-                            <a href="register.html" class="btn carousel-button">Regístrate Ahora</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/carousel2.png" alt="Chicago" class="d-block w-100">
-                    <div class="carousel-caption d-flex justify-content-center align-items-center text-center"
-                        style="height: 100%;">
-                        <div>
-                            <h1>Entrena con los mejores y alcanza tus metas</h1>
-                            <a href="register.html" class="btn carousel-button">Regístrate Ahora</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/carousel3.png" alt="New York" class="d-block w-100">
-                    <div class="carousel-caption d-flex justify-content-center align-items-center text-center"
-                        style="height: 100%;">
-                        <div>
-                            <h1>Transforma tu cuerpo, transforma tu vida.</h1>
-                            <a href="register.html" class="btn carousel-button">Regístrate Ahora</a>
-                        </div>
+    <div class="container-fluid mt-4">
+        <div class="row row-cols-lg-3 g-5 col-12">
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="user-info">
+                            <img src="https://avatars.githubusercontent.com/u/152271526?v=4" alt="User" class="user-avatar">
+                            Mario Pérez
+                        </h6>
+                        <h5 class="card-title">¡Excelente ambiente!</h5>
+                        <p class="card-text">"El gimnasio tiene todo lo que necesito y el personal es súper amable. Me siento muy motivado cada vez que vengo."</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Botones de control del carrusel -->
-            <button class="carousel-control-prev transparent-button" type="button" data-bs-target="#demo"
-                data-bs-slide="prev">
-                <span>&lt;</span>
-            </button>
-            <button class="carousel-control-next transparent-button" type="button" data-bs-target="#demo"
-                data-bs-slide="next">
-                <span>&gt;</span>
-            </button>
-        </div>
-        <section class="mt-4" style="margin-left: 2%;">
-
-            <h1 style="margin-top: 3%;">Opiniones</h1>
-            <h4 style="margin-top: 1%;">Descubre lo que opinan de nosotros</h4>
-
-            <div class="container-fluid mt-4">
-                <div class="row row-cols-lg-3 g-5 col-12">
-                    <div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="user-info">
-                                    <img src="https://avatars.githubusercontent.com/u/152271526?v=4" alt="User"
-                                        class="user-avatar">
-                                    Mario Pérez
-                                </h6>
-                                <h5 class="card-title">¡Excelente ambiente!</h5>
-                                <p class="card-text">"El gimnasio tiene todo lo que necesito y el personal es súper
-                                    amable. Me siento muy motivado cada vez que vengo."</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="user-info">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png"
-                                        alt="User" class="user-avatar">
-                                    Juan
-                                </h6>
-                                <h5 class="card-title">Entrenadores expertos</h5>
-                                <p class="card-text">"Los entrenadores realmente se preocupan por mi progreso. He
-                                    mejorado mucho desde que comencé aquí, ¡totalmente recomendado!"</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="user-info">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png"
-                                        alt="User" class="user-avatar">
-                                    Julian Cardo
-                                </h6>
-                                <h5 class="card-title">Instalaciones de primer nivel</h5>
-                                <p class="card-text">"El equipo está siempre en perfectas condiciones, y el gimnasio
-                                    siempre está limpio. Sin duda, uno de los mejores lugares para entrenar."</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="user-info">
-                                    <img src="https://avatars.githubusercontent.com/u/182014013?v=4" alt="User"
-                                        class="user-avatar">
-                                    Felipe Pérez
-                                </h6>
-                                <h5 class="card-title">Resultados visibles</h5>
-                                <p class="card-text">"Llevo entrenando tres meses y ya noto grandes resultados. ¡Es el
-                                    mejor gimnasio en el que he estado!"</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="user-info">
-                                    <img src="https://avatars.githubusercontent.com/u/149196610?v=4" alt="User"
-                                        class="user-avatar">
-                                    Julia
-                                </h6>
-                                <h5 class="card-title">Gran comunidad</h5>
-                                <p class="card-text">"Lo que más me gusta de este gimnasio es el ambiente entre los
-                                    miembros. Todos se apoyan mutuamente y eso me motiva aún más."</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="user-info">
-                                    <img src="https://avatars.githubusercontent.com/u/160168022?v=4" alt="User"
-                                        class="user-avatar">
-                                    Ana Calvo
-                                </h6>
-                                <h5 class="card-title">Clases increíbles</h5>
-                                <p class="card-text">"Las clases grupales son lo mejor. Siempre me divierto y termino la
-                                    sesión sintiéndome genial. Los instructores son muy profesionales."</p>
-                            </div>
-                        </div>
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="user-info">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png" alt="User" class="user-avatar">
+                            Juan 
+                        </h6>
+                        <h5 class="card-title">Entrenadores expertos</h5>
+                        <p class="card-text">"Los entrenadores realmente se preocupan por mi progreso. He mejorado mucho desde que comencé aquí, ¡totalmente recomendado!"</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container mt-3 "></div>
-        <div class="row align-items-start">
-            <div class="col-sm mx-auto" style="margin: 2%;">
-                <div>
-                    <a href="./index.html">
-                    <img src="images/LOGO.png" class="rounded img-responsive" alt="Logo Gimnasio" style="width:100px;">
-                    </a>
-                </div>
-                <div class="mt-2 p-3">
-                    <a href="https://www.youtube.es" target="_blank"><img src="./images/youtube.png" class="rounded"
-                            alt="Twitter" style="width:25px;"></a>
 
-                    <a href="https://www.linkedin.es" target="_blank"><img src="./images/linkedin.png" class="rounded"
-                            alt="Twitter" style="width:25px;"></a>
-                    <a href="https://x.com/?lang=es" target="_blank"><img src="./images/twitter-x.svg" class="rounded"
-                            alt="Twitter" style="width:25px;"></a>
-                    <a href="https://www.instagram.es" target="_blank"><img src="./images/instagram.svg" class="rounded"
-                            alt="Twitter" style="width:25px;"></a>
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="user-info">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png" alt="User" class="user-avatar">
+                            Julian Cardo
+                        </h6>
+                        <h5 class="card-title">Instalaciones de primer nivel</h5>
+                        <p class="card-text">"El equipo está siempre en perfectas condiciones, y el gimnasio siempre está limpio. Sin duda, uno de los mejores lugares para entrenar."</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm">
-                <h5>Idiomas</h5>
-                <p>Español</p>
-                <p>English</p>
-                <p>Deuscht</p>
-                <p>Portugues</p>
-                <p>中国人</p>
+
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="user-info">
+                            <img src="https://avatars.githubusercontent.com/u/182014013?v=4" alt="User" class="user-avatar">
+                            Felipe Pérez
+                        </h6>
+                        <h5 class="card-title">Resultados visibles</h5>
+                        <p class="card-text">"Llevo entrenando tres meses y ya noto grandes resultados. ¡Es el mejor gimnasio en el que he estado!"</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm ">
-                <h5>Sobre nosotros</h5>
-                <p>Nuestro gimnansio</p>
-                <p>Trabaja con nosotros</p>
-                <p>Visita guiada</p>
+
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="user-info">
+                            <img src="https://avatars.githubusercontent.com/u/149196610?v=4" alt="User" class="user-avatar">
+                            Julia
+                        </h6>
+                        <h5 class="card-title">Gran comunidad</h5>
+                        <p class="card-text">"Lo que más me gusta de este gimnasio es el ambiente entre los miembros. Todos se apoyan mutuamente y eso me motiva aún más."</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm text-blakc">
-                <h5>Explora</h5>
-                <p>Política de Cookies</p>
-                <p>Protección de datos</p>
-                <p>Ayuda</p>
-                <p>Developers</p>
+
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="user-info">
+                            <img src="https://avatars.githubusercontent.com/u/160168022?v=4" alt="User" class="user-avatar">
+                            Ana Calvo
+                        </h6>
+                        <h5 class="card-title">Clases increíbles</h5>
+                        <p class="card-text">"Las clases grupales son lo mejor. Siempre me divierto y termino la sesión sintiéndome genial. Los instructores son muy profesionales."</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <p class="text-center"> 2024 HiiT. Todos los derechos reservados.</p>
     </div>
-</footer>
-</body>
+</section>
+</main>
+<footer style="margin-top: 5%;">
+  <div class="container mt-3"></div>
+  <div class="row align-items-start">
+    <div class="col-sm d-flex flex-column align-items-center mb-4">
+        <a class="navbar-brand" href="#">
+            <img src="images/LOGO2.png" alt="Logo Gimnasio" style="width:100px;">
+        </a>
+        <div class="d-flex mt-3 gap-3">
+          <a href="https://www.youtube.es" target="_blank"><img src="./images/youtube.png" class="rounded" alt="YouTube" style="width:25px;"></a>
+          <a href="https://www.linkedin.es" target="_blank"><img src="./images/linkedin.png" class="rounded" alt="LinkedIn" style="width:25px;"></a>
+          <a href="https://x.com/?lang=es" target="_blank"><img src="./images/twitter-x.svg" class="rounded" alt="X (Twitter)" style="width:25px;"></a>
+          <a href="https://www.instagram.es" target="_blank"><img src="./images/instagram.svg" class="rounded" alt="Instagram" style="width:25px;"></a>
+        </div>
+      </div>
 
+      <div class="col-sm">
+          <h5>Idiomas</h5>
+          <p>Español</p>
+          <p>English</p>
+          <p>Deuscht</p>
+          <p>Portugues</p>
+          <p>中国人</p>
+      </div>
+      <div class="col-sm ">
+          <h5>Explora</h5>
+          <p>Nuestro gimnansio</p>
+          <p>Trabaja con nosotros</p>
+          <p>Visita guiada</p>
+          
+
+      </div>
+      <div class="col-sm text-blakc">
+          <h5>Sobre nosotros</h5>
+          <p>Contáctanos</p>
+          <p>Protección de datos</p>
+          <p>Ayuda</p>
+          <p>Developers</p>
+      </div>
+  </div>
+  </div>
+  <p class="text-center">Todos los derechos reservados ©. 2024 HiiT!!</p>
+</footer>
+    <!-- Bootstrap JS desde tu instalación local -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/LOGO.png" type="image/png">
-    <title>HiiT!!</title>
+    <title>HiiT!! Máquinas</title>
     <!-- Bootstrap 5 CSS desde tu instalación local -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/maquinas.css">
     <!-- Vinculando tu archivo CSS -->
 
 </head>
-
 <body>
-    <header style="margin-bottom: 8%;">
+    <header>
         <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
@@ -52,57 +51,59 @@
                 </div>
             </div>
         </nav>
-        <!-- Popup Modal-->
-<div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+    </header>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="popupModalLabel">Contacto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h3 class="modal-title" id="exampleModalLabel">Reserva de Máquinas</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <p class="col-sm-9 m-3">Complete los detalles para reservar su equipo</p>
             <div class="modal-body">
-                <form id="contact_form" name="contact_form" method="post">
-                    <div class="mb-5">
-                        <label for="email_addr">Email</label>
-                        <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
-                            placeholder="name@example.com">
+                <form id="reservaForm">
+                    <div class="mb-3">
+                        <label><strong>Nombre</strong></label>
+                        <input type="text" class="form-control" id="nombre" required>
                     </div>
-                    <div class="mb-5">
-                        <label for="name_input">Nombre</label>
-                        <input type="text" required maxlength="50" class="form-control" id="name_input" name="name"
-                            placeholder="Name">
+                    <div class="mb-3">
+                        <label><strong>Email</strong></label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                     </div>
-                    <div class="mb-5">
-                        <label for="phone_input">Teléfono</label>
-                        <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
-                            placeholder="Phone">
+                    <div class="mb-3">
+                        <label><strong>Fecha</strong></label>
+                        <input type="date" class="form-control" id="fecha" required>
                     </div>
-                    <div class="mb-5">
-                        <label for="message">Mensaje</label>
-                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                    <div class="mb-3">
+                        <label for="hora" class="form-label"><strong>Hora</strong></label>
+                        <input type="time" class="form-control" id="hora" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                    <div class="mb-3">
+                        <label for="duracion" class="form-label"><strong>Duración</strong></label>
+                        <select class="form-select" id="duracion" required>
+                            <option value="" disabled selected>Seleccione la duración</option>
+                            <option value="30">30 minutos</option>
+                            <option value="45">45 minutos</option>
+                            <option value="60">60 minutos</option>
+                        </select>
+                    </div>
                 </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-dark">Confirmar reserva</button>
             </div>
         </div>
     </div>
 </div>
-    </header>
+
     <main>
-        <div class="dropdown">
-            <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Tipo de Entrenamiento
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Cardio</a></li>
-              <li><a class="dropdown-item" href="#">Fuerza y musculación</a></li>
-              <li><a class="dropdown-item" href="#">Funcional</a></li>
-            </ul>
-          </div>
         <section class="mt-5">
             <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
                 <div class="col">
-                    <div class="card ">
+                    <div class="card cards">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
                             <h5>Cinta de correr</h5>
                             <button type="button" class="btn btn-danger" disabled>No disponible</button>
@@ -111,163 +112,86 @@
                             <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
                         </div>
                         <div class="card-footer">
-                            <div class="card-body d-flex justify-content-between align-items-center ">
+                            <div class="card-body d-flex justify-content-between align-items-center">
                                 <strong class="text-warning">6 € por hora</strong>
-                                <button type="button" class="btn btn-secondary btn-sm" disabled>Reservar</button>
+                                <button type="button" class="btn btn-danger btn-sm" disabled>Reservar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card ">
+                    <div class="card cards">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
                             <h5>Bicicleta estática</h5>
-                            <span class="badge rounded-pill text-bg-success"><span
-                                    class="badge text-bg-success">4</span> Disponibles</span>
+                            <span class="badge rounded-pill text-bg-success">4 Disponibles</span>
                         </div>
                         <div class="card-body mx-auto">
-                            <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
+                            <img src="images/bici.jfif" class="card-img h-15" alt="bicicleta estática">
                         </div>
                         <div class="card-footer">
-                            <div class="card-body d-flex justify-content-between align-items-center ">
+                            <div class="card-body d-flex justify-content-between align-items-center">
                                 <strong class="text-warning">6 € por hora</strong>
-
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Reservar
-                                </button>
-
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <nav
-                                                    class="navbar navbar-expand-lg bg-light navbar-light navbar-collapse">
-                                                    <div class="container-fluid">
-                                                        <h3 class="modal-title">Reserva de Máquinas
-                                                        </h3>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                </nav>
-
-                                            </div>
-                                            <p class="col-sm-9 m-3">Complete los detalles para reservar su equipo
-                                            </p>
-                                            <div>
-
-                                            </div>
-
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <div class="text-blakc align-items-start mb-3">
-                                                            <div>
-                                                                <label><strong>Nombre</strong></label>
-                                                                <input type="text" class="form-control" id="nombre">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <label><strong>Email</strong></label>
-                                                                <input type="email" class="form-control"
-                                                                    placeholder="name@example.com">
-                                                            </div>
-                                                            <div>
-                                                                <label><strong>Fecha</strong></label>
-                                                                <input type="date" class="form-control">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="hora"
-                                                                    class="form-label"><strong>Hora</strong></label>
-                                                                <input type="time" class="form-control">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="duracion"
-                                                                    class="form-label"><strong>Duración</strong></label>
-                                                                    <select class="form-select" aria-label="Default select example">
-                                                                        <option selected>Duracion</option>
-                                                                        <option value="1">30 minutos</option>
-                                                                        <option value="2">45 minutos</option>
-                                                                        <option value="3">60 minutos</option>
-                                                                      </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                        
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="submit" class="btn btn-dark">Confirmar reserva</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card cards">
+                        <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
+                            <h5>Máquina de remo</h5>
+                            <button type="button" class="btn btn-danger" disabled>No disponible</button>
+                        </div>
+                        <div class="card-body mx-auto">
+                            <img src="images/descarga.jpeg" class="card-img h-15" alt="máquina de remo">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <strong class="text-warning">6 € por hora</strong>
+                                <button type="button" class="btn btn-danger btn-sm" disabled>Reservar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card ">
-                    <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
-                        <h5>Máquina de remo</h5>
-
-                        <button type="button" class="btn btn-danger" disabled>No disponible</button>
-
-                    </div>
-                    <div class="card-body mx-auto">
-                        <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-body d-flex justify-content-between align-items-center ">
-                            <strong class="text-warning">6 € por hora</strong>
-
-                            <button type="button" class="btn btn-secondary btn-sm" disabled>Reservar</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
+        
             <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
                 <div class="col">
-                    <div class="card ">
+                    <div class="card cards">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
                             <h5>Bicicleta de Spinning</h5>
                             <a href="#" class="btn btn-danger btn-sm">No disponible</a>
                         </div>
                         <div class="card-body mx-auto">
-                            <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
+                            <img src="images/descarga.jpeg" class="card-img h-15" alt="bicicleta de spinning">
                         </div>
                         <div class="card-footer">
-                            <div class="card-body d-flex justify-content-between align-items-center ">
+                            <div class="card-body d-flex justify-content-between align-items-center">
                                 <strong class="text-warning">6 € por hora</strong>
-                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                                <button type="button" class="btn btn-danger btn-sm" disabled>Reservar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card ">
+                    <div class="card cards">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
                             <h5>Elíptica</h5>
                             <a href="#" class="btn btn-danger btn-sm">No disponible</a>
                         </div>
                         <div class="card-body mx-auto">
-                            <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
+                            <img src="images/descarga.jpeg" class="card-img h-15" alt="elíptica">
                         </div>
                         <div class="card-footer">
-                            <div class="card-body d-flex justify-content-between align-items-center ">
+                            <div class="card-body d-flex justify-content-between align-items-center">
                                 <strong class="text-warning">6 € por hora</strong>
-                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                                <button type="button" class="btn btn-danger btn-sm" disabled>Reservar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card ">
+                    <div class="card cards">
                         <div class="card-title p-3 mt-2 d-flex justify-content-between align-items-center">
                             <h5>Cinta de correr</h5>
                             <a href="#" class="btn btn-danger btn-sm">No disponible</a>
@@ -276,18 +200,19 @@
                             <img src="images/descarga.jpeg" class="card-img h-15" alt="cinta para correr">
                         </div>
                         <div class="card-footer">
-                            <div class="card-body d-flex justify-content-between align-items-center ">
+                            <div class="card-body d-flex justify-content-between align-items-center">
                                 <strong class="text-warning">6 € por hora</strong>
-                                <a href="#" class="btn btn-secondary btn-sm">Reservar</a>
+                                <button type="button" class="btn btn-danger btn-sm" disabled>Reservar</button>
                             </div>
                         </div>
                     </div>
                 </div>
-    
+            </div>
         </section>
     </main>
+</body>
 
-    <footer style="margin-top: 3%;">
+    <footer>
         <div class="container mt-3">
             <div class="row align-items-start">
                 <div class="col-sm d-flex flex-column align-items-center mb-4">
@@ -326,7 +251,6 @@
             <p class="text-center"> 2024 HiiT. Todos los derechos reservados.</p>
         </div>
     </footer>
-</body>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
