@@ -1,0 +1,56 @@
+[
+    {
+      "nombre": "Clase Fuerza Básica",
+      "plazas": 3,
+      "descripcion": "Entrena fuerza y resistencia. Movimientos suaves, enfoque en técnica y control. Perfecta para tonificar y cuidar tu cuerpo sin impacto alto. ¡Transforma tu cuerpo!",
+      "foto": "Pepe.jpg",
+      "dificultad": "Alto",
+      "precioPorHora": 12,
+      "width": 40
+    },
+    {
+        "nombre": "Clase Cardio Avanzado",
+        "plazas": 0,
+        "descripcion": "Mejora tu resistencia cardiovascular. Clase intensa con intervalos de alta intensidad.",
+        "foto": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "dificultad": "Alto",
+        "precioPorHora": 15,
+        "width": 70
+    },
+    {
+     "nombre": "Clase Yoga Restaurativo",
+      "plazas": 4,
+      "descripcion": "Relájate y rejuvenece con posturas suaves y respiración consciente.",
+      "foto": "https://images.pexels.com/photos/917732/pexels-photo-917732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "dificultad": "Muy fácil",
+      "precioPorHora": 10,
+      "width": 70
+    },
+    {
+      "nombre": "Clase Zumba",
+      "plazas": 6,
+      "descripcion": "Baila y quema calorías con ritmos latinos y una gran energía.",
+      "foto": "https://images.pexels.com/photos/3775566/pexels-photo-3775566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "dificultad": "Medio",
+      "precioPorHora": 12,
+      "width": 50
+    },
+    {
+      "nombre": "Clase HIIT",
+      "plazas": 4,
+      "descripcion": "Entrenamiento de alta intensidad que combina cardio y fuerza.",
+      "foto": "https://images.pexels.com/photos/4753985/pexels-photo-4753985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "dificultad": "Alto",
+      "precioPorHora": 18,
+      "width": 80
+    },
+    {
+      "nombre": "Clase Pilates",
+      "plazas": 3,
+      "descripcion": "Mejora tu postura y tonifica con ejercicios de control y respiración.",
+      "foto": "https://images.pexels.com/photos/4498577/pexels-photo-4498577.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "dificultad": "Medio",
+      "precioPorHora": 14,
+      "width": 60
+    }
+  ]

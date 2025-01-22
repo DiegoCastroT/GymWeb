@@ -1,0 +1,38 @@
+[
+    {
+      "nombre": "Cinta de correr",
+      "disponibles": "No",
+      "precioPorHora": 6,
+      "foto": "descarga.jpeg"
+    },
+    {
+      "nombre": "Bicicleta Estatica",
+      "disponibles": 4,
+      "precioPorHora": 6,
+      "foto": "bici.jfif"
+    },
+    {
+      "nombre": "Máquina de remo",
+      "disponibles": "No",
+      "precioPorHora": 6,
+      "foto": "descarga.jpeg"
+    },
+    {
+      "nombre": "Bicicleta de Spinning",
+      "disponibles": "No",
+      "precioPorHora": 6,
+      "foto": "descarga.jpeg"
+    },
+    {
+      "nombre": "Eliptica",
+      "disponibles": "No",
+      "precioPorHora": 6,
+      "foto": "descarga.jpeg"
+    },
+    {
+      "nombre": "Cinta de correr",
+      "disponibles": "No",
+      "precioPorHora": 6,
+      "foto": "descarga.jpeg"
+    }
+  ]
